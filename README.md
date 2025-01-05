@@ -23,7 +23,9 @@ cd $HOME && git clone git@github.com:caelifer/dotfiles.git
 
 - Install simlinks
 ```sh
-stow --verbose=2 .
+# Create $HOME/.config directory if none exist
+test -d ~/.config || mkdir -p ~/.config
+(cd ~/dotfiles && stow --verbose=2 .)
 
 ```
 
