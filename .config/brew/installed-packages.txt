@@ -1,0 +1,12 @@
+btop
+fastfetch
+fzf
+go
+htop
+lazydocker
+lazygit
+libgit2
+neovim
+ripgrep
+rust
+tmux
