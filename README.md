@@ -23,6 +23,6 @@ cd $HOME && git clone git@github.com:caelifer/dotfiles.git
 
 - Install simlinks
 ```sh
-stow --verbose=3
+stow --verbose=2 .
 
 ```
