@@ -37,12 +37,12 @@ test -d ~/.config || mkdir -p ~/.config
 
 - To update list of installed brew packages, run the following command:
 ```sh
-brew leaves > ~/.config/brew/installed-packages.txt
+cd ~/dotfiles && brew bundle dump
 ```
 
 - To (re)install brew packages from the list, run:
 ```sh
-xargs brew install < ~/.config/brew/installed-packages.txt
+cd ~/dotfiles && brew bundle
 ```
 
 ### Ghostty
