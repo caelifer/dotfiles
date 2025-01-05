@@ -26,3 +26,30 @@ cd $HOME && git clone git@github.com:caelifer/dotfiles.git
 stow --verbose=2 .
 
 ```
+
+***
+
+## Specific software notes
+
+### Brew
+
+- To update list of installed brew packages, run the following command:
+```sh
+brew leaves > ~/.config/brew/installed-packages.txt
+```
+
+- To (re)install brew packages from the list, run:
+```sh
+xargs brew install < ~/.config/brew/installed-packages.txt
+```
+
+### Ghostty
+Ghostty is a new software, so it is only available at this time via Brew cask. To install, run this command:
+```sh
+brew install --cask ghostty
+```
+
+
+### Tmux
+To install / update TPM modules, start a new tmux session and type <Ctrl-A> <shift>I.
+
