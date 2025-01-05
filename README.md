@@ -37,7 +37,7 @@ test -d ~/.config || mkdir -p ~/.config
 
 - To update list of installed brew packages, run the following command:
 ```sh
-cd ~/dotfiles && brew bundle dump
+cd ~/dotfiles && brew bundle --force dump
 ```
 
 - To (re)install brew packages from the list, run:
