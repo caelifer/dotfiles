@@ -53,5 +53,5 @@ brew install --cask ghostty
 
 
 ### Tmux
-To install / update TPM modules, start a new tmux session and type <Ctrl-A> <shift>I.
+To install / update TPM modules, start a new tmux session and type `<Ctrl-A> <shift>I`.
 
