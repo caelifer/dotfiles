@@ -9,4 +9,5 @@ libgit2
 neovim
 ripgrep
 rust
+stow
 tmux
