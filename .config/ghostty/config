@@ -1,15 +1,16 @@
 # Setup terminal font family
 # --------------------------
-# font-family = "FiraMono Nerd Font Mono"
+font-size = 16
+font-family = ""
+font-family = FiraMono Nerd Font Mono
 # font-family = "FiraCode Nerd Font Mono"
-font-family = "Hack Nerd Font Mono"
-
-# Setup theme
-# -----------
-# theme = "Chalkboard"
-theme = "catppuccin-mocha"
+# font-family = "Hack Nerd Font Mono"
 
 # Cursor
 # ------
-cursor-style = "block"
+cursor-style = block
 cursor-style-blink = false
+
+# Setup theme
+# -----------
+theme = catppuccin-mocha
