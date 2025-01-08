@@ -1,6 +1,3 @@
-# Set TERM for GhosTTY
-export TERM=xterm-ghostty
-
 # Golang support
 export GOPATH=~/go
 export PATH=$GOPATH/bin:$PATH
