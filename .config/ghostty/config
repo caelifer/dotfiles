@@ -2,8 +2,8 @@
 # --------------------------
 font-size = 16
 font-family = ""
-font-family = FiraMono Nerd Font Mono
-# font-family = "FiraCode Nerd Font Mono"
+# font-family = FiraMono Nerd Font Mono
+font-family = "FiraCode Nerd Font Mono"
 # font-family = "Hack Nerd Font Mono"
 
 # Cursor
