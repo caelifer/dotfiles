@@ -4,7 +4,7 @@ export PATH=$GOPATH/bin:$PATH
 
 # Homebrew custom path
 export HOMEBREW_HOME=/opt/homebrew
-export PATH=$HOMEBREW_HOME/bin:$PATH
+export PATH=$HOMEBREW_HOME/sbin:$HOMEBREW_HOME/bin:$PATH
 
 # Setup aliases
 alias ls='ls --color'
