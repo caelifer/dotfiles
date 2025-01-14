@@ -2,14 +2,18 @@
 # --------------------------
 font-size = 16
 font-family = ""
-# font-family = FiraMono Nerd Font Mono
+
+# Support font ligatures
 font-family = "FiraCode Nerd Font Mono"
+# Optional fonts that look nice...
+# font-family = FiraMono Nerd Font Mono
 # font-family = "Hack Nerd Font Mono"
 
-# Cursor
-# ------
-cursor-style = block
-cursor-style-blink = false
+# Cursor (no affect on actual application)
+# ----------------------------------------
+# cursor-style = block
+# cursor-style-blink = false
+# cursor-invert-fg-bg = true
 
 # Setup theme
 # -----------
