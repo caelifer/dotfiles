@@ -1,6 +1,6 @@
 # Setup terminal font family
 # --------------------------
-font-size = 16
+font-size = 14
 font-family = ""
 
 # Support font ligatures
