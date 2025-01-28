@@ -3,9 +3,10 @@
 font-size = 14
 font-family = ""
 
-# Support font ligatures
-font-family = "FiraCode Nerd Font Mono"
+font-family = FiraMono Nerd Font Mono
 # Optional fonts that look nice...
+# Support font ligatures
+# font-family = "FiraCode Nerd Font Mono"
 # font-family = FiraMono Nerd Font Mono
 # font-family = "Hack Nerd Font Mono"
 
