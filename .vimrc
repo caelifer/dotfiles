@@ -1,5 +1,6 @@
 " Integrate with system clipboard (for Vim on Mac must use "unnamed" register)
 set clipboard+=unnamed
+set rtp+=/opt/homebrew/opt/fzf
 
 " Default editing style
 set textwidth=132
