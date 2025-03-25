@@ -12,9 +12,9 @@ font-family = FiraMono Nerd Font Mono
 
 # Cursor (no affect on actual application)
 # ----------------------------------------
-# cursor-style = block
-# cursor-style-blink = false
-# cursor-invert-fg-bg = true
+cursor-style = block
+cursor-style-blink = false
+cursor-invert-fg-bg = true
 
 # Setup theme
 # -----------
