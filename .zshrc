@@ -1,25 +1,13 @@
-# Golang support
-export GOPATH=~/go
-export PATH=$GOPATH/bin:$PATH
+# Load private keys to SSH agent
+_PRIVATE_KEYS_SPEC=$(cat <<__ | grep -v ^#
+# Personal keys
+~/.ssh/id_rsa
+__
+)
 
-# Homebrew custom path
-export HOMEBREW_HOME=/opt/homebrew
-export PATH=$HOMEBREW_HOME/sbin:$HOMEBREW_HOME/bin:$PATH
-
-# Setup aliases
-alias ls='ls --color'
-alias lf='ls -F'
-alias lt='lf -lrt'
-alias lg='lazygit'
-alias ld='lazydocker'
-alias icat='kitten icat'
-alias upbrew='brew update && brew upgrade && brew doctor'
-
-# Executing EDITOR with custom font
-export EDITOR=vim
-v() {
-	printf '\e]710;%s\007' "FiraCode Nerd Font Mono"
-	eval $EDITOR "$@"
-	printf '\e]710;%s\007' "FiraMono Nerd Font Mono"
-}
-
+_PRIVATE_KEYS_TO_LOAD=$(xargs <<<${_PRIVATE_KEYS_SPEC})
+_PRIVATE_KEYS_COUNT=$(wc -l <<<${_PRIVATE_KEYS_SPEC} | xargs)
+if [ $(ssh-add -l | grep -v "^The agent has no identities" | wc -l) -lt ${_PRIVATE_KEYS_COUNT} ]
+then
+	eval ssh-add ${_PRIVATE_KEYS_TO_LOAD}
+fi
