@@ -1,9 +1,8 @@
 # Setup terminal font family
 # --------------------------
 font-size = 14
-font-family = ""
-
 font-family = FiraMono Nerd Font Mono
+
 # Optional fonts that look nice...
 # Support font ligatures
 # font-family = "FiraCode Nerd Font Mono"
@@ -18,4 +17,4 @@ cursor-style-blink = false
 
 # Setup theme
 # -----------
-theme = catppuccin-mocha
+theme = "Catppuccin Mocha"
