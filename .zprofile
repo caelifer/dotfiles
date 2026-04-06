@@ -1,6 +1,5 @@
-# Setup shell
-autoload -Uz compinit
-compinit
+# Use autocompletions
+fpath=(/opt/homebrew/share/zsh/site-functions $fpath)
 
 # Use Emacs binding
 bindkey -e
@@ -54,3 +53,16 @@ v() {
 	printf '\e]710;%s\007' "FiraMono Nerd Font Mono"
 }
 
+# Load env files from ~/.config
+setup_config_envs() {
+        local envs=$(find ~/.config -type f -name env)
+        if [ ! -z "$envs" ]
+        then
+                local e
+                while read e
+                do
+                        source $e # && echo "sourced '$e'"
+                done <<<$envs
+        fi
+}
+setup_config_envs
